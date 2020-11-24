@@ -1,0 +1,345 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>RocketChat - Ajuda Atendimento</title>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap"
+		rel="stylesheet">
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- External Css -->
+	<link rel="stylesheet" href="./assets/css/app.css">
+
+</head>
+
+<body>
+	<nav id="navbar">
+		<header>RocketChat Documentação de Atendimento</header>
+		<ul style="list-style-type:none">
+			<li><a class="nav-link" href="#Introduction">Introdução</a></li>
+			<li><a class="nav-link" href="#History">Ambiente do usuário</a></li>
+			<li><a class="nav-link" href="#OOP_reference">Ambiente do usuário</a></li>
+			<li><a class="nav-link" href="#Syntax">Menu Administração</a></li>
+			<li><a class="nav-link" href="#Control_structures">Menu Livechat</a></li>
+			<!-- <li><a class="nav-link" href="#Classes">Classes</a></li>
+			<li><a class="nav-link" href="#Executed_code">Executed Code</a></li>
+			<li><a class="nav-link" href="#Image_based_persistence">Image Based Persistence</a></li>
+			<li><a class="nav-link" href="#Access_levels">Access levels</a></li>
+			<li><a class="nav-link" href="#Just_in_time_compilation">Just in time compilation</a></li>
+			<li><a class="nav-link" href="#Other_references">Other references</a></li> -->
+		</ul>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header>Introdução</header>
+			<article>
+				<p>
+					O Rocket.chat é a solução para melhorar a produtividade da Prefeitura Municipal de Santarém, 
+					garantindo uma comunicação ágil, segura e em tempo real. A plataforma é muito 
+					versátil com recursos como compartilhamento de arquivos e chamadas de videoconferência. 
+					Além de otimizar a comunicação interna, é possível melhorar a comunicação com a população, 
+					através de um Livechat e a possibilidade de criação de um canal de comunicação. Em tempos de Pandemia
+					e a necessidade de se evitar aglomeração, esta plataforma torna-se necessária.
+				</p>
+			</article>
+		</section>
+		<section class="main-section" id="History">
+			<header>Ambiente do Usuário</header>
+			<article>
+				<h3> Ativar/Desativar Livechat </h3>
+				<p> Este botão serve para <b> Ativar </b> ou <b> Desativar </b> a <i>visibilidade</i> do usuário para o atendimento pelo Livechat.
+					Estando <b> habilitado</b>, o usuário fica <b>disponível</b> na fila para atender os usuários pelo Livechat.
+					Estando <b>desabilitado</b>, o usuário fica <b>indisponível</b> para atender os usuários pelo Livechat.
+				</p>
+				<p><i>Imagem do painel inicial do usuário, circulando o botão de ativar/desativar o Livechat</i></p><br>
+				<img src="img/ativar-desativar-livechat.jpg" alt="">
+				
+				<h3> Menu Pesquisar </h3>
+				<p> Este menu serve para pesquisar/localizar o nome de alguma pessoa atendida anteriormente, e que o sistema ainda mantém
+					registro da conversa. </p>
+				<p><i>Imagem do painel inicial do usuário, circulando o botão de pesquisa</i></p><br>
+				<img src="img/menu-pesquisar.jpg" alt="">
+				
+				<h3> Janela de Atendimeto Livechat</h3>
+				<p> Esta é a janela principal do chat para interação com o contribuinte. Abaixo, será descrito cada item
+					desta janela.
+				</p>
+				<p><i>Imagem da janela de bate papo inteira, com os itens circulados</i></p><br>
+				<img src="img/janela-atendimento-livechat.jpg" alt="">
+
+				<h3> Informações do Visitante</h3>
+				<p> Este menu é utilizado para visualizar as informações do visitante, quando há um cadastro feito anteriormente
+					no sistema, mostrado na próxima seção, assim como o botão editar, fechar e encaminhar.  </p>
+				<p><i>Imagem da janela de bate papo inteira, com os itens circulados no menu Informações do Visitante</i></p><br>
+				<img src="img/informacoes-visitante.jpg" alt="">
+
+				<h3>Editar/Cadastrar novo visitante</h3>
+				<p> Este menu tem a finalidade de cadastrar o contribuinte que procura atendimento. 
+					Para isso, você precisa clicar em "Informações do Visitante", e em seguida no botão "Editar".
+					</p>
+
+				<p><i>Imagem da janela de bate papo inteira, com os itens circulados</i></p><br>
+				<img src="img/informacao-visitante-editar.jpg" alt="">
+				<p>Estão disponíveis para cadastro: 
+					<li><b>Nome</b>: Você pode pedir para o usuário informar o nome, e pode cadastrar neste campo.</li>
+					<li><b>E-mail</b>: Você pode pedir para o usuário informar o e-mail, para posterior contato.</li>
+					<li><b>Phone</b>: Vocẽ pode pedir para o usuário informar o telefone, para posterior contato.</li>
+					<li><b>Tópico</b>: Você pode cadastrar sobre qual foi o assunto do atendimento ao contribuinte.</li>
+					<li><b>Tags:</b> Vocẽ pode colocar uma etiqueta, para identificar o assunto do atendimento. Ex: IPTU, ITBI, CND.</li>
+				</p>
+				<img src="img/informacao-visitante-editar-preencher.jpg" alt="">
+				<p> Informações preenchidas no formulário:</p>
+				<img src="img/informacao-visitante-editar-preenchida.jpg" alt="">
+
+				<h3>Encaminhar usuário (IMPORTANTE - somente com a conversa ativa)</h3>
+				<p> Este menu tem como objetivo encaminhar o contribuinte a um setor ou outro atendente específico correto. </p>
+				<p><i>Ex: O contribuinte está em contato com um atendente da Divisão de Tributos, e necessita ser encaminhado
+					para a Divisão de Cadastro Imobiliário.</i></p>
+				<p> Para isto, deve-se clicar em "Informações do Usuário", em seguida clicar em "Encaminhar". 
+					Em seguida, deve-se escolher Encaminhar ao departamento, clicando em "Selecione um Departamento" e escolher
+					para qual será encaminhado, ou Encaminhar ao usuário, clicando em "Selecione um usuário" e digitando o nome 
+					do usuário que efetuará o atendimento.
+				</p>
+				<p><i>Imagem da janela de bate papo inteira, com os itens ENCAMINHAR circulados</i></p>
+				<img src="img/informacao-visitante-encaminhar.jpg" alt="">
+				<p><i>Imagem de uma janela de bate papo em curso, de um encaminhamento realizado.</i></p><br>
+				<img src="img/" alt="">
+				
+				<h3>Encerrar atendimento</h3>
+				<p> Este menu é utilizado para encerrar/finalizar o atendimento ao contribuinte, para que a sessão
+					seja fechada. Este menu só está disponível quando a conversa ainda está ativa. </p>
+				<p> Para isto, deve-se clicar em "Informações do Usuário", em seguida clicar em "Fechar".
+					Em seguida, será solicitado que você adicione um comentário, que serve para registrar 
+					o status de conclusão do atendimento.  </p>
+				<p><i>Imagem da janela de bate papo inteira, com o item <b> FECHAR </b> circulado</i></p><br>
+				
+				<h3> Marcar como favorito</h3>
+				<p> Este menu serve para uma conversa como favorita. Ela ficará destacada/em evidência na lista de atendimentos realizados. </p>
+				<p><i>Imagem da janela de bate papo inteira, com o item <b>FAVORITO</b> circulado</i></p><br>
+				
+				<h3>Ultimos Chats</h3>
+				<p> Este menu exibe a lista de todas as últimas conversas realizadas com este contribuinte, por data e hora.
+					Ao clicar nas datas, será exibida a conversa realizada naquela sessão. </p>
+				<p><i>Imagem da janela de bate papo inteira, com o item <b>ÚLTIMOS CHATS</b> circulados</i></p><br>
+				
+				<h3>Vídeo Chat</h3>
+				<p> Este menu tem a finalidade de criar um link para bate papo via Áudio e Vídeo, através
+					do sistema JITSI, para chamada como vídeo conferência. Pode servir para confirmar a identidade
+					do contribuinte ou resolver algo mais específico e importante.</p>
+				<p><i>Imagem da janela de bate papo inteira, com o item <b>VÍDEO CHAT</b> circulado</i></p><br>
+				
+				<h3>Preferência de notificações</h3>
+				<p> Este menu tem como finalidade configurar alertas sobre novas chamadas de contribuintes a serem atendidos.
+					Você pode ativar ou desativar estes alertas. </p>
+				<p><i>Imagem da janela de bate papo inteira, com o item <b>PREFERÊNCIA DE NOTIFICAÇÕES</b> circulados</i></p><br>
+				
+				<h3>Anexar arquivo do computador</h3>
+				<p> Este menu tem como objetivo anexar um arquivo do computador para enviar ao contribuinte. </p>
+				<p>Para isto, na janela de atendimento, você deve clicar em + (no canto inferior direito da tela)
+					ao lado da barra de composição de texto conforme a imagem abaixo. Em seguida.</p>
+				<p><i>Imagem da janela de bate papo inteira, com os itens circulados</i></p><br>
+
+				<br>
+			</article>
+		</section>
+		<section class="main-section" id="Syntax">
+			<header>Permissões</header>
+			<article>
+				<p>Aqui será descrito todos os itens de configuração do Menu Administração..</p>
+					<strong>Adicionar usuários</strong>
+						<p>Aqui é descrito como adicionar um usuário. </p>
+
+						<strong>Permissões</strong>
+
+						<p> Aqui é descrita as permissões básicas de cada perfil de usuário. </p>
+
+						<p>  </p>
+
+			</article>
+		</section>
+		<section class="main-section" id="Control_structures">
+			<header>Menu Livechat</header>
+			<article>
+				<p>Aqui é descrito os itens do menu Livechat.</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et. Mi sit amet mauris commodo quis. Eu augue ut lectus arcu bibendum at varius vel pharetra. Tristique senectus et netus et malesuada. Sociis natoque penatibus et magnis dis. Nisi lacus sed viverra tellus in hac. Pellentesque habitant morbi tristique senectus. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Id volutpat lacus laoreet non curabitur gravida arcu. Leo urna molestie at elementum eu facilisis sed odio morbi. Nisl condimentum id venenatis a. Leo vel fringilla est ullamcorper eget. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Pharetra et ultrices neque ornare aenean euismod. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Lorem sed risus ultricies tristique nulla. A iaculis at erat pellentesque adipiscing commodo. Duis ut diam quam nulla porttitor massa id neque aliquam.
+
+					Quis blandit turpis cursus in hac habitasse. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Malesuada fames ac turpis egestas integer eget aliquet. Suscipit tellus mauris a diam maecenas sed. Tortor dignissim convallis aenean et. Magna fermentum iaculis eu non diam. Rhoncus urna neque viverra justo. In egestas erat imperdiet sed euismod nisi. Habitant morbi tristique senectus et netus et malesuada. Eget arcu dictum varius duis at consectetur lorem donec. Ante in nibh mauris cursus mattis molestie. Felis eget nunc lobortis mattis aliquam. Odio pellentesque diam volutpat commodo sed. Massa vitae tortor condimentum lacinia quis vel eros donec. Commodo viverra maecenas accumsan lacus vel facilisis volutpat.
+					
+					Purus semper eget duis at tellus. Lectus mauris ultrices eros in cursus turpis. Hac habitasse platea dictumst vestibulum. Scelerisque in dictum non consectetur a erat nam at. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Proin sagittis nisl rhoncus mattis rhoncus urna. Sed risus ultricies tristique nulla aliquet enim. Justo nec ultrices dui sapien. In arcu cursus euismod quis. Nisi quis eleifend quam adipiscing. Eget dolor morbi non arcu risus quis varius. In hac habitasse platea dictumst quisque sagittis purus. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Purus sit amet volutpat consequat mauris nunc congue nisi.
+					
+					Vitae turpis massa sed elementum tempus egestas sed. Risus nullam eget felis eget. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Lacinia quis vel eros donec ac odio tempor. Sapien eget mi proin sed libero enim sed. Porttitor leo a diam sollicitudin tempor. Suspendisse interdum consectetur libero id. Neque viverra justo nec ultrices dui sapien eget. Cras adipiscing enim eu turpis egestas pretium. Donec et odio pellentesque diam volutpat.
+					
+					Ultrices mi tempus imperdiet nulla malesuada. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi. Commodo nulla facilisi nullam vehicula ipsum a. In hac habitasse platea dictumst. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Felis donec et odio pellentesque diam volutpat commodo. Quisque sagittis purus sit amet volutpat. Nunc mattis enim ut tellus elementum sagittis vitae. Suspendisse faucibus interdum posuere lorem. Ultricies mi eget mauris pharetra et ultrices neque ornare. Id venenatis a condimentum vitae. Donec ac odio tempor orci dapibus ultrices in iaculis. Gravida cum sociis natoque penatibus et. Egestas dui id ornare arcu odio. Vitae turpis massa sed elementum tempus egestas sed sed.
+				</p>
+
+			</article>
+		</section>
+		<!-- <section class="main-section" id="Classes">
+			<header>Classes
+			</header>
+			<article>
+				<p>This is a stock class definition: </p>
+				<code>
+					Object subclass: #MessagePublisher
+					instanceVariableNames: ''
+					classVariableNames: ''
+					poolDictionaries: ''
+					category: 'Smalltalk Examples'
+				</code>
+				<p>Often, most of this definition will be filled in by the environment.
+					Notice that this is a message to the Object class to create a subclass called
+					MessagePublisher. In other words: classes are first-class objects in Smalltalk
+					which can receive messages just like any other object and can be created dynamically at execution
+					time.
+				</p>
+				<h4>Methods</h4>
+				<p>When an object receives a message, a method matching the message name is invoked.
+					The following code defines a method publish, and so defines what will happen when this
+					object receives the 'publish' message.</p>
+				<code>
+							publish
+							Transcript show: 'Hello World!'
+				</code>
+				<p>The following method demonstrates receiving multiple arguments and returning a value:</p>
+				<code>
+				quadMultiply: i1 and: i2
+				"This method multiplies the given numbers by each other and the result by 4."
+				| mul |
+				mul := i1 * i2.
+				 ^mul * 4
+				</code>
+				<p>The method's name is <code>#quadMultiply:and:</code>. The return value is specified with the ^
+					operator.
+					Note that objects are responsible for determining dynamically at runtime which method to execute in
+					response to
+					a message—while in many languages this may be (sometimes, or even always) determined statically at
+					compile time.
+				</p>
+				<h4>Instantiating classes </h4>
+
+				<p>The following code:</p>
+				<code>MessagePublisher new</code>
+				<p>creates (and returns) a new instance of the MessagePublisher class. This is typically assigned to a
+					variable:</p>
+				<code>publisher := MessagePublisher new</code>
+				<p>However, it is also possible to send a message to a temporary, anonymous object:</p>
+				<code>
+					MessagePublisher new publish
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Executed_code">
+			<header>Executed code</header>
+			<article>
+				<p>
+					The Hello world program is used by virtually all texts to new programming languages as the first
+					program learned to show the most basic syntax and environment of the language. For Smalltalk, the
+					program is extremely simple to write. The following code, the message "show:" is sent to the object
+					"Transcript" with the String literal 'Hello, world!' as its argument. Invocation of the "show:"
+					method causes the characters of its argument (the String literal 'Hello, world!') to be displayed in
+					the transcript ("terminal") window.
+				</p>
+				<code>Transcript show: 'Hello, world!'.</code>
+				<p>Note that a Transcript window would need to be open in order to see the results of this example.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Image_based_persistence">
+			<header>Image based persistence</header>
+			<article>
+				<p>Most popular programming systems separate static program code (in the form of class definitions,
+					functions or procedures) from dynamic, or run time, program state (such as objects or other forms of
+					program data). They load program code when a program starts, and any prior program state must be
+					recreated explicitly from configuration files or other data sources. Any settings the program (and
+					programmer) does not explicitly save must be set up again for each restart. A traditional program
+					also loses much useful document information each time a program saves a file, quits, and reloads.
+					This loses details such as undo history or cursor position. Image based systems don't force losing
+					all that just because a computer is turned off, or an OS updates.
+
+					Many Smalltalk systems, however, do not differentiate between program data (objects) and code
+					(classes). In fact, classes are objects. Thus, most Smalltalk systems store the entire program state
+					(including both Class and non-Class objects) in an image file. The image can then be loaded by the
+					Smalltalk virtual machine to restore a Smalltalk-like system to a prior state.[30] This was inspired
+					by FLEX, a language created by Alan Kay and described in his M.Sc. thesis.[31]
+
+					Smalltalk images are similar to (restartable) core dumps and can provide the same functionality as
+					core dumps, such as delayed or remote debugging with full access to the program state at the time of
+					error. Other languages that model application code as a form of data, such as Lisp, often use
+					image-based persistence as well. This method of persistence is powerful for rapid development
+					because all the development information (e.g. parse trees of the program) is saved which facilitates
+					debugging. However, it also has serious drawbacks as a true persistence mechanism. For one thing,
+					developers may often want to hide implementation details and not make them available in a run time
+					environment. For reasons of legality and maintenance, allowing anyone to modify a program at run
+					time inevitably introduces complexity and potential errors that would not be possible with a
+					compiled system that exposes no source code in the run time environment. Also, while the persistence
+					mechanism is easy to use, it lacks the true persistence abilities needed for most multi-user
+					systems. The most obvious is the ability to do transactions with multiple users accessing the same
+					database in parallel.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Access_levels">
+			<header>Access levels</header>
+			<article>
+				<p>Everything in Smalltalk-80 is available for modification from within a running program. This means
+					that, for example, the IDE can be changed in a running system without restarting it. In some
+					implementations, the syntax of the language or the garbage collection implementation can also be
+					changed on the fly. Even the statement true become: false is valid in Smalltalk, although executing
+					it is not recommended.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Just_in_time_compilation">
+			<header>Just in time compilation</header>
+			<article>
+				<p>Smalltalk programs are usually compiled to bytecode, which is then interpreted by a virtual machine
+					or dynamically translated into machine-native code.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Other_references">
+			<header>Other references</header>
+			<article> <a href="https://en.wikipedia.org/wiki/Smalltalk" target="_blank"  rel="noopener noreferrer">See also : Smalltalk</a> </article>
+			<article>
+				<h4>List of Implementations</h4>
+				<ul style="list-style-type:none">
+					<li>Amber Smalltalk, runs on JavaScript via transpilation</li>
+					<li>Cincom has the following Smalltalk products: ObjectStudio, VisualWorks and WebVelocity.</li>
+					<li>Visual Smalltalk Enterprise, and family, including Smalltalk/V</li>
+					<li>F-Script</li>
+					<li>GemTalk Systems, GemStone/S</li>
+					<li>GNU Smalltalk</li>
+					<li>StepTalk, GNUstep scripting framework uses Smalltalk language on an Objective-C runtime</li>
+					<li>VisualAge Smalltalk</li>
+					<li>VAST Platform (VA Smalltalk), developed by Instantiations, Inc</li>
+					<li>Little Smalltalk</li>
+					<li>Object Arts, Dolphin Smalltalk</li>
+					<li>Object Connect, Smalltalk MT Smalltalk for Windows</li>
+					<li>Pharo Smalltalk, an open-source cross-platform language</li>
+					<li>PharoJS an open-source transpiler from Smalltalk to Javascript, extending the Pharo environment
+					</li>
+					<li>Pocket Smalltalk, runs on Palm Pilot</li>
+					<li>Squeak, open source Smalltalk</li>
+					<li>eToys, a visual programming system for learning</li>
+					<li>Strongtalk, for Windows, offers optional strong typing</li>
+				</ul>
+
+				<h4>See also || Look at also</h4>
+				<ul style="list-style-type:none">
+					<li>Objective-C</li>
+					<li>GLASS (software bundle)</li>
+					<li>Distributed Data Management Architecture</li>
+				</ul>
+			</article>
+		</section> -->
+	</main>
+
+
+
+	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+
+</html>

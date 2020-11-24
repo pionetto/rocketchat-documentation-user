@@ -22,16 +22,19 @@
 		<header>RocketChat Documentação de Atendimento</header>
 		<ul style="list-style-type:none">
 			<li><a class="nav-link" href="#Introduction">Introdução</a></li>
-			<li><a class="nav-link" href="#History">Ambiente do usuário</a></li>
-			<li><a class="nav-link" href="#OOP_reference">Ambiente do usuário</a></li>
-			<li><a class="nav-link" href="#Syntax">Menu Administração</a></li>
-			<li><a class="nav-link" href="#Control_structures">Menu Livechat</a></li>
-			<!-- <li><a class="nav-link" href="#Classes">Classes</a></li>
-			<li><a class="nav-link" href="#Executed_code">Executed Code</a></li>
-			<li><a class="nav-link" href="#Image_based_persistence">Image Based Persistence</a></li>
-			<li><a class="nav-link" href="#Access_levels">Access levels</a></li>
-			<li><a class="nav-link" href="#Just_in_time_compilation">Just in time compilation</a></li>
-			<li><a class="nav-link" href="#Other_references">Other references</a></li> -->
+			<li><a class="nav-link" href="#Ativar">Ativar/Desativar Livechat</a></li>
+			<li><a class="nav-link" href="#Pesquisar">Menu Pesquisar</a></li>
+			<li><a class="nav-link" href="#Atend-Livechat">Janela de Atendimeto Livechat</a></li>
+			<li><a class="nav-link" href="#Info-Visitante">Informações do Visitante</a></li>
+			<li><a class="nav-link" href="#Editar-Visitante">Editar/Cadastrar novo visitante</a></li>
+			<li><a class="nav-link" href="#Encaminhar-usuario">Encaminhar usuário</a></li>
+			<li><a class="nav-link" href="#Encerrar-Atend">Encerrar Atendimento</a></li>
+			<li><a class="nav-link" href="#Marcar-Favorito">Marcar como favorito</a></li>
+			<li><a class="nav-link" href="#Ultimos-chats">Últimos Chats</a></li>
+			<li><a class="nav-link" href="#Video-chat">Vídeo Chat</a></li>
+			<li><a class="nav-link" href="#Preferencia-Notif">Preferência de Notificações</a></li>
+			<li><a class="nav-link" href="#Anexar-arquivo">Anexar arquivo ao atendimento</a></li>
+
 		</ul>
 	</nav>
 	<main id="main-doc">
@@ -48,41 +51,61 @@
 				</p>
 			</article>
 		</section>
-		<section class="main-section" id="History">
-			<header>Ambiente do Usuário</header>
+		<section class="main-section" id="Ativar">
+			<header>Ativar/Desativar Livechat</header>
 			<article>
-				<h3> Ativar/Desativar Livechat </h3>
 				<p> Este botão serve para <b> Ativar </b> ou <b> Desativar </b> a <i>visibilidade</i> do usuário para o atendimento pelo Livechat.
 					Estando <b> habilitado</b>, o usuário fica <b>disponível</b> na fila para atender os usuários pelo Livechat.
 					Estando <b>desabilitado</b>, o usuário fica <b>indisponível</b> para atender os usuários pelo Livechat.
 				</p>
 				<p><i>Imagem do painel inicial do usuário, circulando o botão de ativar/desativar o Livechat</i></p><br>
 				<img src="img/ativar-desativar-livechat.jpg" alt="">
-				
-				<h3> Menu Pesquisar </h3>
+			</article>
+		</section>
+
+		<section class="main-section" id="Pesquisar">
+			<header>Menu Pesquisar</header>
+			<article>
 				<p> Este menu serve para pesquisar/localizar o nome de alguma pessoa atendida anteriormente, e que o sistema ainda mantém
 					registro da conversa. </p>
 				<p><i>Imagem do painel inicial do usuário, circulando o botão de pesquisa</i></p><br>
 				<img src="img/menu-pesquisar.jpg" alt="">
-				
-				<h3> Janela de Atendimeto Livechat</h3>
+			</article>
+		</section>				
+
+		<section class="main-section" id="Atend-Livechat">
+			<header>Janela de Atendimeto Livechat</header>
+			<article>
 				<p> Esta é a janela principal do chat para interação com o contribuinte. Abaixo, será descrito cada item
 					desta janela.
 				</p>
 				<p><i>Imagem da janela de bate papo inteira, com os itens circulados</i></p><br>
 				<img src="img/janela-atendimento-livechat.jpg" alt="">
+			</article>
+		</section>	
 
-				<h3> Informações do Visitante</h3>
+		<section class="main-section" id="Info-Visitante">
+			<header> Informações do Visitante</header>
+			<article>		
 				<p> Este menu é utilizado para visualizar as informações do visitante, quando há um cadastro feito anteriormente
 					no sistema, mostrado na próxima seção, assim como o botão editar, fechar e encaminhar.  </p>
 				<p><i>Imagem da janela de bate papo inteira, com os itens circulados no menu Informações do Visitante</i></p><br>
 				<img src="img/informacoes-visitante.jpg" alt="">
-
-				<h3>Editar/Cadastrar novo visitante</h3>
+			</article>
+		</section>	
+		
+		<section class="main-section" id="Editar-Visitante">
+			<header> Editar/Cadastrar novo visitante</header>
+			<article>		
 				<p> Este menu tem a finalidade de cadastrar o contribuinte que procura atendimento. 
 					Para isso, você precisa clicar em "Informações do Visitante", e em seguida no botão "Editar".
 					</p>
+				</article>
+			</section>	
 
+		<section class="main-section" id="Editar-Visitante">
+			<header> Editar/Cadastrar novo visitante</header>
+			<article>			
 				<p><i>Imagem da janela de bate papo inteira, com os itens circulados</i></p><br>
 				<img src="img/informacao-visitante-editar.jpg" alt="">
 				<p>Estão disponíveis para cadastro: 
@@ -95,8 +118,12 @@
 				<img src="img/informacao-visitante-editar-preencher.jpg" alt="">
 				<p> Informações preenchidas no formulário:</p>
 				<img src="img/informacao-visitante-editar-preenchida.jpg" alt="">
+			</article>
+		</section>	
 
-				<h3>Encaminhar usuário (IMPORTANTE - somente com a conversa ativa)</h3>
+		<section class="main-section" id="Encaminhar-usuario">
+			<header> Encaminhar usuário</header>
+			<article>
 				<p> Este menu tem como objetivo encaminhar o contribuinte a um setor ou outro atendente específico correto. </p>
 				<p><i>Ex: O contribuinte está em contato com um atendente da Divisão de Tributos, e necessita ser encaminhado
 					para a Divisão de Cadastro Imobiliário.</i></p>
@@ -109,48 +136,69 @@
 				<img src="img/informacao-visitante-encaminhar.jpg" alt="">
 				<p><i>Imagem de uma janela de bate papo em curso, de um encaminhamento realizado.</i></p><br>
 				<img src="img/" alt="">
-				
-				<h3>Encerrar atendimento</h3>
+			</article>
+		</section>
+
+		<section class="main-section" id="Encerrar-Atend">
+			<header>Encerrar atendimento</header>
+			<article>		
 				<p> Este menu é utilizado para encerrar/finalizar o atendimento ao contribuinte, para que a sessão
 					seja fechada. Este menu só está disponível quando a conversa ainda está ativa. </p>
 				<p> Para isto, deve-se clicar em "Informações do Usuário", em seguida clicar em "Fechar".
 					Em seguida, será solicitado que você adicione um comentário, que serve para registrar 
 					o status de conclusão do atendimento.  </p>
 				<p><i>Imagem da janela de bate papo inteira, com o item <b> FECHAR </b> circulado</i></p><br>
-				
-				<h3> Marcar como favorito</h3>
+			</article>
+		</section>				
+
+		<section class="main-section" id="Marcar-Favorito">
+			<header>Marcar como favorito</header>
+			<article>		
 				<p> Este menu serve para uma conversa como favorita. Ela ficará destacada/em evidência na lista de atendimentos realizados. </p>
 				<p><i>Imagem da janela de bate papo inteira, com o item <b>FAVORITO</b> circulado</i></p><br>
-				
-				<h3>Ultimos Chats</h3>
+			</article>
+		</section>					
+
+		<section class="main-section" id="Ultimos-chats">
+			<header>Ultimos Chats</header>
+			<article>		
 				<p> Este menu exibe a lista de todas as últimas conversas realizadas com este contribuinte, por data e hora.
 					Ao clicar nas datas, será exibida a conversa realizada naquela sessão. </p>
 				<p><i>Imagem da janela de bate papo inteira, com o item <b>ÚLTIMOS CHATS</b> circulados</i></p><br>
-				
-				<h3>Vídeo Chat</h3>
+			</article>
+		</section>	
+
+		<section class="main-section" id="Video-chat">
+			<header>Vídeo Chat</header>
+			<article>		
 				<p> Este menu tem a finalidade de criar um link para bate papo via Áudio e Vídeo, através
 					do sistema JITSI, para chamada como vídeo conferência. Pode servir para confirmar a identidade
 					do contribuinte ou resolver algo mais específico e importante.</p>
 				<p><i>Imagem da janela de bate papo inteira, com o item <b>VÍDEO CHAT</b> circulado</i></p><br>
-				
-				<h3>Preferência de notificações</h3>
+			</article>
+		</section>	
+
+		<section class="main-section" id="Preferencia-Notif">
+			<header>Preferência de notificações</header>
+			<article>		
 				<p> Este menu tem como finalidade configurar alertas sobre novas chamadas de contribuintes a serem atendidos.
 					Você pode ativar ou desativar estes alertas. </p>
 				<p><i>Imagem da janela de bate papo inteira, com o item <b>PREFERÊNCIA DE NOTIFICAÇÕES</b> circulados</i></p><br>
-				
-				<h3>Anexar arquivo do computador</h3>
+			</article>
+		</section>	
+
+		<section class="main-section" id="Anexar-arquivo">
+			<header>Anexar arquivo do computador</header>
+			<article>		
 				<p> Este menu tem como objetivo anexar um arquivo do computador para enviar ao contribuinte. </p>
 				<p>Para isto, na janela de atendimento, você deve clicar em + (no canto inferior direito da tela)
 					ao lado da barra de composição de texto conforme a imagem abaixo. Em seguida.</p>
 				<p><i>Imagem da janela de bate papo inteira, com os itens circulados</i></p><br>
-
 				<br>
 			</article>
 		</section>
 	
 	</main>
-
-
 
 	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
